@@ -1349,7 +1349,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchCountries", ()=>fetchCountries);
 const fetchCountries = (name)=>{
-    const BASE_URL = "https://restcountries.com/v3.1/name/{name}";
+    const BASE_URL = "https://restcountries.com/v3.1/name/";
     const properties = "fields=name,capital,population,flags,languages";
     return fetch(`${BASE_URL}${name}?${properties}`).then((response)=>{
         console.log(!response.ok);
